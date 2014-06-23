@@ -1,30 +1,51 @@
 /* app css stylesheet */
 
-.menu {
-  list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
-  padding: 0 0 0.5em;
+.container {
+    overflow: hidden;
 }
 
-.menu:before {
-  content: "[";
+.header {
+    background: #fff url(../img/next.png) bottom right no-repeat;
+    height: 100px;
 }
 
-.menu:after {
-  content: "]";
+.week_calendar {
+    height: 564px;
+    border: 2px #6b6b69 solid;
 }
 
-.menu > li {
-  display: inline;
+.week_item {
+    display: block;
+    float: left;
+    height: 80px;
+    width: 12.5%;
+    border-right: 2px #6b6b69 solid;
+    border-bottom: 2px #6b6b69 solid;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 45px;
+    color: #c4d99d;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.week_item_last {
+    border-right: 0px;
 }
 
-.menu > li:nth-child(1):before {
-  content: "";
-  padding: 0;
+.week_item_bottom {
+    border-bottom: 0px;
+}
+
+.passed {
+    background-color: #d1d1d1;
+    color: #fff;
+}
+
+.current {
+    background-color: #accc68;
+    color: #fff;
+}
+
+.comming {
+    background-color: #56b0bb;
+    color: #fff;
 }
