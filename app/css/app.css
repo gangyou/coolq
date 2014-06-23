@@ -27,6 +27,12 @@
     color: #c4d99d;
 }
 
+.week_item .name, .week_item .item {
+    display: block;
+    color: #fff;
+    font-size: 24px;
+}
+
 .week_item_last {
     border-right: 0px;
 }
